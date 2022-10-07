@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+</head>
+<body>
+<h2>취업 정보 계정 만들기</h2>
+<p>&#42;필수 입력 항목</p>
+<form>
+    <p>기본 정보</p>
+        이 름&#42; <input type="text" value="" size="8"><br>
+        이메일&#42; <input type="email" placeholder="id@domain_name" size="15"><br>
+        암호&#42; <input type="password" value="" size="12"><br>
+        암호 확인&#42; <input type="password" value="" size="12"><br>
+        모바일 폰&#42; <input type="tel" placeholder="010-0000-0000" size="13"><br>
+        개인 홈페이지 <input type="url" placeholder="http://" size="30"><br>
+        주소&#42; <input type="text" value="" size="30">
+    <p>학 력</p>
+        학교 명&#42; <input type="text" value="" size="12"><br>
+        전 공&#42; <input type="text" value="" size="12"><br>
+        졸업 여부&#42; <select name="졸업 여부">
+            <option value="1">---선택---</option>
+            <option value="2">졸업예정</option>
+            <option value="3">졸업</option>
+        </select><br>
+        졸업&#40;예정&#41;일 <input type="date" value="연도-월-일">
+    <p>업무 경력</p>
+    근무업체명 <input type="text" value="" size="20"><br>
+    직 위 <input type="text" value="" size="10"><br>
+    담당 업무 <textarea cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea><br>
+    근무년수 <input type="number" min="0" max="10" step="0.5">년
+    <p>자기소개서</p>
+    첨부 파일<input type="file" value="파일 선택">
+    <p align="center">
+        <button type="submit">제 출</button>
+        <input type="reset" value="재작성">
+    </p>
+</form>
+
+</body>
+</html>
