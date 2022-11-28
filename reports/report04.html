@@ -29,13 +29,12 @@
                 return row;}
 
             var height = document.getElementById("size").value;
-            height = parseInt(height) + 1
             var prev_row = new Array()
             for(var i=0; i<height; i++){
                 var n_row = new_row(prev_row);
                 var num= n_row.length;
-                for(var i=0; i<num; i++){
-                    var message = n_row[i] + " ";
+                for(var j=0; j<num; j++){
+                    var message = n_row[j] + " ";
                     document.getElementById("draw_area").innerHTML += message;
                 }
             prev_row = n_row;
