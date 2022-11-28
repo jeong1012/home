@@ -28,13 +28,12 @@
 <h2>2번</h2>
 <script>
         var height = prompt("파스칼의 삼각형의 높이","2");
-        height = parseInt(height) + 1
         var prev_row = new Array()
         for(var i=0; i<height; i++){
             var n_row = new_row(prev_row);
             var num= n_row.length;
-            for(var i=0; i<num; i++){
-                document.write(n_row[i] + " ");
+            for(var j=0; j<num; j++){
+                document.write(n_row[j] + " ");
             }
             prev_row = n_row;
             document.write("<br>");
