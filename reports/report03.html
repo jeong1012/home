@@ -23,11 +23,12 @@
 <script>
         var n = prompt("2진수를 입력하세요")
         var change = parseInt(n, 2).toString(16)
-        document.write("2진수: " + n + "--> 16진수: " + change)
+        document.write("2진수: " + n + " --> 16진수: " + change)
 </script>
 <h2>2번</h2>
 <script>
         var height = prompt("파스칼의 삼각형의 높이","2");
+        height = parseInt(height) + 1
         var prev_row = new Array()
         for(var i=0; i<height; i++){
             var n_row = new_row(prev_row);
