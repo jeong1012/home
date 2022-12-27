@@ -159,9 +159,9 @@
   });
 
   /**
-   * Testimonials slider
+   * playlist slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.playlist-slider', {
     speed: 600,
     loop: true,
     autoplay: {
